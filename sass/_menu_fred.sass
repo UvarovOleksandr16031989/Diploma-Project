@@ -1,6 +1,7 @@
 .section_menu
 	background: url(../images/pic/background/menu_bg.png)
 	text-align: center
+	padding: 45px 0 71px 0
 	
 .menu_logo
 	padding: 19px 15px
@@ -26,11 +27,17 @@
 	line-height: 100px;
 	display: inline-block
 	background: $corporate_color
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%)
 	text-align: center
 	position: absolute
 	right: 15px
 	top: -15px
+
+
+.menu_content_logo
+	&:nth-child(2)
+		right: 100%	
+		left: 15px
 
 .menu_content_img_logo
 	width: auto
@@ -97,7 +104,7 @@
 
 .menu_offer_positions
 	display: inline-block
-	padding: 15px 13px 39px 0
+	padding: 15px 6.5px 39px 6.5px
 	vertical-align: top
 
 
@@ -124,7 +131,7 @@
 .menu_list_button
 	display: inline-block
 	text-align: center
-	margin: 14% 0
+	margin: 14% 0 0 0
 
 
 
@@ -134,3 +141,18 @@
 	line-height: 30px
 	background-color: $corporate_color
 	margin: 5px 0	
+
+.menu_offer_right
+	text-align: right 	
+
+.menu_offer_description
+.menu_offer_right	
+	&::after
+		margin: 0 0 0 133px
+
+.menu_content_offer
+.menu_content_right
+	padding: 0 27px 0 0
+
+.menu_content_logo_big
+	margin-bottom: 15px	
