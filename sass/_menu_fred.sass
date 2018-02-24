@@ -2,6 +2,7 @@
 	background: url(../images/pic/background/menu_bg.png)
 	text-align: center
 	padding: 45px 0 71px 0
+	background-size: cover
 	
 .menu_logo
 	padding: 19px 15px
@@ -21,10 +22,11 @@
 	text-transform: uppercase
 	font-variant: small-caps
 	padding: 35px 0 0 0
+	
 
 .menu_content_logo
-	width: 67px;
-	line-height: 100px;
+	width: 67px
+	line-height: 100px
 	display: inline-block
 	background: $corporate_color
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%)
@@ -34,24 +36,27 @@
 	top: -15px
 
 
-.menu_content_logo
-	&:nth-child(2)
-		right: 100%	
-		left: 15px
-
 .menu_content_img_logo
 	width: auto
+
 .menu_content_figure
-	display: inline-block
+	float: left
 	vertical-align: top
+	@extend .clearfix
+
+.menu_offer_title_content
+	float: left
+	padding: 0 0 0 27px
+	@extend .clearfix
+
 
 .menu_content_offer
 	display: inline-block
 	text-align: left
 	background-color: #eaf1f0
 	word-spacing: 4px
-	padding: 0 0 0 27px
 	position: relative
+	width: 877px
 
 .menu_content
 	word-spacing: -4px
@@ -69,21 +74,21 @@
 	padding: 36px 0 0 0
 
 .menu_offer_description
-	color: #282828;
+	color: #282828
 	font-family: 'PT Sans', sans-serif
 	font-size: 14px
 	font-weight: 400
 	line-height: 16.99px
 	line-height: 24px
-
-.menu_offer_description
 	&::after
+		position: absolute
 		content: ''
 		width: 410px
 		height: 1px
 		background-color: #b8b8b8
 		opacity: 0.5	
 		display: block
+		
 
 	
 .menu_offer_dish_img
@@ -103,10 +108,15 @@
 	
 
 .menu_offer_positions
-	display: inline-block
-	padding: 15px 6.5px 39px 6.5px
+	float: left
+	padding: 15px 19px 39px 0px
 	vertical-align: top
+	@extend .clearfix
 
+.menu_content_box
+	float: left
+	padding: 0 0 0 29px
+	@extend .clearfix
 
 .menu_offer_dish_title
 	font-family: 'PT Sans', sans-serif
@@ -114,6 +124,7 @@
 	font-weight: 700
 	color: #282828
 	padding: 12px 0 0 0
+	min-height: 28px
 
 .menu_dish_content
 	font-family: 'PT Sans', sans-serif
@@ -121,15 +132,19 @@
 	font-weight: 400
 	color: #282828
 	padding: 7px 0 0 0
+	min-height: 44px
 
 .menu_offer_details
-	display: inline-block
-	padding: 10px 15px
-	background-color: $corporate_color
-	margin: 14px 0 9px 0
+	@extend .battom_detalis
+	&:hover
+    	box-shadow: 0 0 3px rgba(0,0,0,.5)
+
+	
+
+	
 
 .menu_list_button
-	display: inline-block
+	float: left
 	text-align: center
 	margin: 14% 0 0 0
 
@@ -139,20 +154,49 @@
 	display: block
 	width: 30px
 	line-height: 30px
-	background-color: $corporate_color
+	border-radius: 2px
+	background-color: #d7d7d8
 	margin: 5px 0	
 
+.menu_link_button
+	&:hover
+		background-color: $corporate_color
+			
 .menu_offer_right
 	text-align: right 	
-
-.menu_offer_description
-.menu_offer_right	
-	&::after
-		margin: 0 0 0 133px
 
 .menu_content_offer
 .menu_content_right
 	padding: 0 27px 0 0
 
-.menu_content_logo_big
+.menu_content_img_logo_revers
 	margin-bottom: 15px	
+
+	
+
+.revers
+	float: right
+
+.revers>p 
+	text-align: right
+	position: relative
+
+.menu_offer_title_content.revers
+  padding: 0 27px 0 0
+  text-align: right
+
+.menu_offer_positions.revers
+	padding: 15px 0px 39px 20px
+
+.menu_content_box.revers
+	padding: 0 29px 0 0	 
+.menu_offer_description.revers
+	&::after
+		right: 0	
+
+.menu_content_logo.revers
+	right: 100%
+	margin-right: -83px		
+
+.menu_content_logo_big
+	margin-bottom: 20px	

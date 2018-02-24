@@ -5,16 +5,18 @@
   
 
 .clearfix
-  content: ''
-  clear: both
-  display: table
-  overflow: hidden
+  &::after
+    content: ''
+    clear: both
+    display: table
+    overflow: hidden
 
-.clearfiix, .header_heat::after
-  display: table
-  content: ''
-  clear: both
-  overflow: hidden
+.clearfixed
+  &::before
+    content: ''
+    clear: both
+    display: table
+    overflow: hidden
 
 .alagin_top
   vertical-align: top
@@ -22,8 +24,24 @@
 .alagin_botton
   vertical-align: bottom
  
-.section
-  background-size: cover
-  background-repead: no-repead
+
   
 $corporate_color: #96c038
+
+.battom_detalis
+	display: inline-block
+	padding: 10px 15px
+	background-color: $corporate_color
+	margin: 14px 0 9px 0
+    
+textarea, 
+textarea:active, 
+textarea:focus 
+    outline: none
+    resize: none
+
+button, 
+button:active, 
+button:focus
+   outline: none
+   border: none
