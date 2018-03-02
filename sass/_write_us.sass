@@ -38,22 +38,19 @@
 	height: 40px
 	border-radius: 10px
 	background-color: #ffffff
-	color: rgba(#505050, .5)
+	color: rgba(#505050, .9)
 	font-family: 'Lora', serif
 	font-size: 16px
 	font-weight: 400
 	line-height: 16.98px
 	padding: 0 0 0 18px
 	display: block
+	&::placeholder
+		color: rgba(#505050, .3)
 
 .write_us_input_box
-	float: left	
-	@extend.clearfix
+	float: left
 	margin-left: 140px
-	
-	
-.write_us_form
-	@extend.clearfix
 
 
 .write_us_topic
@@ -67,7 +64,7 @@
 	border-radius: 10px
 	background-color: #ffffff
 	float: right
-	color: rgba(#505050, .5)
+	color: rgba(#505050, .9)
 	font-family: 'Lora', serif
 	font-size: 16px
 	font-weight: 400
@@ -75,9 +72,14 @@
 	padding: 0 0 0 18px
 	display: block
 	margin-right: 140px
+	&::placeholder
+		color: rgba(#505050, .3)
+
+.write_us_box_form
 	@extend.clearfix
-	
-	
+
+
+
 
 .write_us_form_btn	
 	text-align: center
@@ -96,9 +98,7 @@
 
 .write_us_btn_box
 	padding: 35px 0 0 0	
-	display: table
-	clear: both
-	margin: 0 auto
+	text-align: center
 
 .write_us_tell
 	position: absolute
@@ -119,5 +119,4 @@
 	font-variant: small-caps
 	line-height: 36px
 
-.write_tell_link_tell
 		

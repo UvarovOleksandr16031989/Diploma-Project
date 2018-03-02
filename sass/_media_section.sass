@@ -1,12 +1,12 @@
 .media_section
 	background: $corporate_color
-	padding: 45px 0 64px 0
+	padding: $adabtive_sizes*45+% 0 $adabtive_sizes*65+% 0
 
 .media_logo_img
 	width: auto
 
 .media_logo
-	margin: 0 auto 35px
+	margin: 0 auto $adabtive_sizes*35+%
 	width: 70px
 	line-height: 70px
 	vertical-align: middle
@@ -24,42 +24,70 @@
 	text-align: center
 	
 .media_video_content
-	padding: 47px 0 0 0
-	display: inline-block
-	width: 747px
-	height: 420px
+	width: 58.35%
 	position: absolute
+	height: 100%
+
 
 
 .media_video_content_left
 	top: 0
 	left: 0
-	margin-left: -373.5px
+	margin-left: -29.175%
 	@extend .media_video_content
 
 .media_video_content_center
 	top: 0
 	right: 50%
-	margin-right: -373.5px
+	margin-right: -29.175%
 	@extend .media_video_content
 
 .media_video_content_right
 	top: 0
 	right: 0
-	margin-right: -373.5px
+	margin-right: -29.175%
 	@extend .media_video_content
 
 .media_video_box
 	overflow: hidden
-	height: 420px
+	padding: 0 0 27.5%
 	text-align: center
 	width: 100%
 	position: relative
+	margin: $adabtive_sizes*47+% 0 0 0
 
 .media_video
 	width: 85%
 
 
+#overlay
+	position: absolute
+	top: -10%
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+	background: url('../images/pic/icon/video_button.png') 50% 50% no-repeat
+	background-size: 15%
+
+.media_video::-webkit-media-controls-panel
+	display: none
 
 
+#overlay.o
+	background: none
 
+.media__side_walls
+	position: absolute
+	height: 100%
+	top: -15px
+	z-index: 1
+	width: 5%
+	background-color: black
+
+.media__side_walls_right
+	@extend .media__side_walls
+	right: 23.52%
+.media__side_walls_left
+	@extend .media__side_walls
+	left: 23.52%
