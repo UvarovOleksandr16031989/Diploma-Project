@@ -8,13 +8,20 @@
 		</h5>
 	</div>
 	<div class="media_video_box">
+		<figure class="media__side_walls_left">
+			<img src="images/pic/icon/media_side.png" alt="" class="media__side_walls_img">
+		</figure>
+		<figure class="media__side_walls_right">
+			<img src="images/pic/icon/media_side.png" alt="" class="media__side_walls_img">
+		</figure>
 	<figure class="media_video_content_left">
 		<video  class="media_video" controls="control" >
-			<source src="video/cats.mp4" class="media_video_mp4" >	
+			<source src="video/cats.mp4" class="media_video_mp4" >
 		</video>
 	</figure>
 	<figure class="media_video_content_center">
-		<video  class="media_video" controls="control" >
+		<div class="overlay" id="overlay"></div>
+		<video  class="media_video" controls="control" id="video"  >
 			<source src="video/cats_2.mp4" class="media_video_mp4" >
 		</video>
 	</figure>

@@ -12,11 +12,19 @@
             </p>
         </div>
         <form class="write_us_form">
-            <div class="write_us_input_box">
-                <input type="text" placeholder="E-mail" class="write_us_mail">
-                <input type="text" placeholder="Оберіть тему звернення" class="write_us_topic">
-            </div>
-            <textarea class="write_us_mesage" type="text" placeholder="Текст звернення"></textarea>
+            <div class="write_us_box_form">
+                <div class="write_us_input_box">
+                    <input type="email" placeholder="E-mail" class="write_us_mail">
+                    <select   class="write_us_topic">
+                        <option class="write_us_topic_choice" >Оберіть тему звернення</option>
+                        <option class="write_us_topic_choice" valume="2">Замовте дегустацію</option>
+                        <option class="write_us_topic_choice" valume="3">Вiдгук</option>
+                        <option class="write_us_topic_choice" valume="4">Меню</option>
+                        <option class="write_us_topic_choice" valume="4">Пропозицiя</option>
+                    </select>
+                </div>
+                <textarea class="write_us_mesage" type="text" placeholder="Текст звернення"></textarea>
+                </div>
             <div class="write_us_btn_box">
             	<button class="write_us_form_btn">
                 	надіслати
