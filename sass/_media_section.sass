@@ -1,7 +1,8 @@
 .media_section
 	background: $corporate_color
 	padding: $adabtive_sizes*45+% 0 $adabtive_sizes*65+% 0
-
+	position: relative
+	overflow: hidden
 .media_logo_img
 	width: auto
 
@@ -22,72 +23,44 @@
 	text-transform: uppercase
 	font-variant: small-caps
 	text-align: center
-	
-.media_video_content
-	width: 58.35%
-	position: absolute
-	height: 100%
-
-
-
-.media_video_content_left
-	top: 0
-	left: 0
-	margin-left: -29.175%
-	@extend .media_video_content
-
-.media_video_content_center
-	top: 0
-	right: 50%
-	margin-right: -29.175%
-	@extend .media_video_content
-
-.media_video_content_right
-	top: 0
-	right: 0
-	margin-right: -29.175%
-	@extend .media_video_content
-
 .media_video_box
-	overflow: hidden
-	padding: 0 0 27.5%
-	text-align: center
-	width: 100%
-	position: relative
-	margin: $adabtive_sizes*47+% 0 0 0
+	margin-top: 47px
 
 .media_video
-	width: 85%
-
-
-#overlay
-	position: absolute
-	top: -10%
-	left: 0
-	width: 100%
-	height: 100%
-	z-index: 10
-	background: url('../images/pic/icon/video_button.png') 50% 50% no-repeat
-	background-size: 15%
-
-.media_video::-webkit-media-controls-panel
-	display: none
-
-
-#overlay.o
-	background: none
-
+	width: 700px
+	height: 400px
+.media__side_walls_img
+	width: auto
+	margin-top: -25px
 .media__side_walls
 	position: absolute
-	height: 100%
-	top: -15px
-	z-index: 1
-	width: 5%
+	height: 386px
+	top: 32.2%
+	z-index: 5
 	background-color: black
 
 .media__side_walls_right
 	@extend .media__side_walls
-	right: 23.52%
+	right: 50%
+	margin-right: 345px
 .media__side_walls_left
 	@extend .media__side_walls
-	left: 23.52%
+	left: 50%
+	margin-left: 345px
+
+.media_link_button
+	width: 30px
+	height: 55px
+	position: absolute
+	color: white
+	top: 50%
+	z-index: 10
+.media_link_button_left
+	@extend.media_link_button
+	left: 98px
+.media__batton_img_right
+	@extend.media_link_button
+	right: 98px
+
+.media__batton_ing_left
+	transform: rotate(180deg)

@@ -1,6 +1,6 @@
 .section_footer
   background-color: rgb(80, 80, 80)
-  padding: 100px 0 20px 0
+  padding: $adabtive_sizes*100+% 0 $adabtive_sizes*20+% 0
   text-align: center
 
 .footer_content_contact
@@ -31,12 +31,22 @@
   font-weight: 700
   line-height: 17px
   font-variant: small-caps
-  padding: 0 20px
+  padding: 0 $adabtive_sizes*20+%
   &:hover
     border-bottom: 4px  solid  #ffffff
 
 .footer_contact_link
-  padding: 0 8.5px
+  margin: 0 8.5px
+  width: 40px
+   height: 40px
+  display: inline-block
+  border-radius: 100px
+  &:hover
+    box-shadow: 0 0 10px #fff
+
+.footer_contact_link_img
+  &:hover
+    background-color: rgba(#505050, .4)
 
 .footer_for
   color: #fff

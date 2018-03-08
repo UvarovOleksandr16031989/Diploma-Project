@@ -1,4 +1,7 @@
-@media screen and (max-width: 1100px)
+
+@media screen and (max-width: 1099px)
+
+
 
   .header_chec_btn
     display: block
@@ -20,15 +23,30 @@
     display: block
     width: 100%
     margin: 0
+    &:hover
+      border-bottom: 4px solid transparent
+
 
   .right_menu
-    margin-top: 150px
+    padding-top: 150px
   #chek:checked~.header_menu
     visibility: visible
     opacity: 1
     width: 100%
     height: 100%
+  #chek:checked~.header_chec_btn>.header__btn-center
+    margin-left: 100px
 
+  #chek:checked~.header_chec_btn
+    padding-top: 10px
+
+  #chek:checked~.header_chec_btn>.header__btn-top
+    transform: rotate(45deg)
+
+
+  #chek:checked~.header_chec_btn>.header__btn-bottom
+    margin-top: -20px
+    transform: rotate(-45deg)
 
   .why_text
     margin: 0
@@ -37,12 +55,13 @@
     vertical-align: middle
 
 
-
-
   .menu_content_figure,
   .menu_offer_title_content
     text-align: center
     width: 100%
+  .menu_content_box_carousel
+    float: none
+    margin: 0 auto
 
   .menu_content_figure,
   .menu_offer_title_content,
@@ -61,15 +80,36 @@
     margin: 0
     text-align: center
 
+  .menu_list_button
+    transform: translateX(50%)
+    float: none
+    margin: 0 0 0 -32.5px
 
   .section_service
     text-align: center
 
 
-@media screen and (max-width: 840px)
+  .write_us_input_box
+    display: inline-block
+    float: none
+    margin: 0
+
+  .write_us_mesage
+    float: none
+    display: block
+    margin: 20px auto 0
+
+  .chief_content
+    overflow: scroll
+
+@media screen and (max-width: 960px)
 
   .why_content:nth-child(3) p
     margin: 0
+
+@media screen and (max-width: 840px)
+
+
   .chief_logo
     width: 50px
     line-height: 50px
@@ -83,6 +123,17 @@
   .chief_title
     font-size: 20px
 
+  .map_clients
+    text-align: center
+
+  .map_clients_about,.map_clients_about_content,.map_clients_logo
+    display: block
+    height: auto
+
+  .footer_content_link
+    display: block
+    &:hover
+      border: none
 @media screen and (max-width: 720px)
 
   .top_content_header
@@ -109,14 +160,27 @@
     display: inline
     margin: 0
 
+
+
+@media screen and (max-width: 680px)
+  .menu_offer_positions,.menu_list_button,.menu_offer_positions.revers
+    float: none
+    display: inline-block
+
   .menu_list_button
-    transform: none
-    padding: 0 10px
+    display: block
+    transform: translateX(50%)
+    padding: 0
+
+  .menu_content_box_carousel
+    width: 340px
 
 @media screen and (max-width: 600px)
   .service_content_about
     padding-left: 0px
     min-width: 210px
+
+
 
   .service_content_photo
     width: 210px
@@ -136,13 +200,32 @@
   .chief_content_content
     font-size: 10px
 
+
+  .write_tell_link
+    font-size: 15px
+    line-height: 21px
+    white-space: nowrap
+
+  .write_tell_link_tell
+    font-size: 15px
+    white-space: nowrap
+
+  .write_us_tell
+    bottom: -36px
+
 @media screen and (max-width: 480px)
+  .menu_content_box_carousel
+    width: 170px
 
   .right_menu
-    margin-top: 36%
+    padding-top: 36%
 
   .header_content_strong
     font-size: 44px
+
+  .header__hamburge-btn
+    height: 3px
+    width: 25px
 
   .why_content_box>.why_content p
     width: 210px
@@ -182,3 +265,44 @@
   .chief_content_box_top > .chief_content_content
     font-size: 8px
     line-height: 10px
+
+  .map_about_content_title
+    font-size: 11px
+
+  .map_about_content_street
+    font-size: 8px
+
+  .map_clients
+    overflow-y: scroll
+    height: 300px
+
+  .news_ad
+    margin: 0
+
+
+  #chek:checked~.header_chec_btn>.header__btn-bottom
+    margin-top: -16px
+
+
+@media screen and (max-width: 400px)
+
+  .write_us_mail,.write_us_mesage
+    width: 210px
+
+  .write_us_topic
+    width: 100%
+
+  .write_us_logo_ing
+    width: 50%
+
+  .write_us_logo
+    width: 50px
+    line-height: 50px
+
+  .write_us_review
+    line-height: 20px
+
+
+  .footer_content
+    margin-top: 15px
+

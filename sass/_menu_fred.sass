@@ -3,6 +3,7 @@
 	text-align: center
 	padding: $adabtive_sizes*45+% 0 $adabtive_sizes*71+% 0
 	background-size: cover
+	overflow: hidden
 	
 .menu_logo
 	padding: $adabtive_sizes*19+% $adabtive_sizes*15+%
@@ -106,15 +107,27 @@
 	
 
 .menu_offer_positions
-	float: left
 	padding: 15px 10px 39px 10px
 	vertical-align: top
 	width: 150px
+	display: inline-block
 	@extend .clearfix
+
+.menu_content_box_carousel
+	width: 510px
+	height: 333px
+	position: relative
+	overflow: hidden
+	float: left
+	left: 0
 
 .menu_content_box
 	float: left
-	margin:  0 0 $adabtive_sizes * 27 + 0%
+	margin:  0 0 0 $adabtive_sizes * 13.5 + %
+	position: absolute
+	list-style-type: none
+	overflow: hidden
+	width: 1000px
 	@extend .clearfix
 
 .menu_offer_dish_title
@@ -141,9 +154,11 @@
 
 .menu_list_button
 	float: left
+	margin: 0 13px
 	text-align: center
 	padding: 0
 	transform: translateY(150%)
+
 
 .menu_link_button
 	display: block
@@ -151,9 +166,11 @@
 	line-height: 30px
 	border-radius: 2px
 	background-color: #d7d7d8
-	margin: 5px 0	
+	margin: 5px 0
+	color: #fff
 
 .menu_link_button
+	cursor: pointer
 	&:hover
 		background-color: $corporate_color
 			
@@ -167,6 +184,8 @@
 
 .revers
 	float: right
+	right: 0
+
 
 .revers>p
 	position: relative
@@ -179,11 +198,20 @@
 	padding: 15px 10px 39px 10px
 
 .menu_content_box.revers
-	margin: 0 $adabtive_sizes*27+% 0 0
+	margin: 0 $adabtive_sizes* 13.5+% 0 0
 
 .menu_content_logo.revers
 	right: 100%
 	margin-right: -83px		
 
 .menu_content_logo_big
-	margin-bottom: 20px	
+	margin-bottom: 20px
+
+.menu_offer_positions:nth-child(2)
+	left: 170px
+
+.menu_offer_positions:nth-child(3)
+	left: 340px
+
+.menu_offer_positions:nth-child(4)
+	left: 510px
