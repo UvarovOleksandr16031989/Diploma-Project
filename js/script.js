@@ -26,7 +26,7 @@
     position: uluruTwo,
     map: map
   });
-}
+};
 
 
 $(document).ready(function () {
@@ -176,15 +176,37 @@ $(document).ready(function () {
      $('.caroselVideo').owlCarousel({
          items:3,
          loop:true,
+         video:true,
+         dots:false,
          margin:20,
+         nav:false,
          center:true,
-         videoHeight:400,
-         autoWidth:700,
+         autoWidth:true,
          responsive:{
-
-             1099:{
+             1199:{
                  items:1,
-                 autoWidth:1200
+                 videoHeight:400,
+                 videoWidth: 700
+             },
+             680:{
+                 items:1,
+                 videoHeight:400,
+                 videoWidth: 700
+             },
+             600:{
+                 items:1,
+                 videoHeight:300,
+                 videoWidth: 600
+             },
+             480:{
+                 items:1,
+                 videoHeight:200,
+                 videoWidth: 400
+             },
+             400:{
+                 items:1,
+                 videoHeight:100,
+                 videoWidth: 300
              }
          }
      })
@@ -200,4 +222,4 @@ $(document).ready(function () {
          // Parameters has to be in square bracket '[]'
          owl.trigger('prev.owl.carousel', [300]);
      });
- })
+ });

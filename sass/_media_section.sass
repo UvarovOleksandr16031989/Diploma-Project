@@ -2,7 +2,7 @@
 	background: $corporate_color
 	padding: $adabtive_sizes*45+% 0 $adabtive_sizes*65+% 0
 	position: relative
-	overflow: hidden
+
 .media_logo_img
 	width: auto
 
@@ -15,6 +15,10 @@
 	border-radius: 100px
 	text-align: center
 
+.media_video_box
+	position: relative
+	overflow: hidden
+	margin-top: 47px
 .media_title
 	color: #fff
 	font-family: 'PT Sans', sans-serif
@@ -23,8 +27,9 @@
 	text-transform: uppercase
 	font-variant: small-caps
 	text-align: center
-.media_video_box
-	margin-top: 47px
+
+.media_video_carousel
+
 
 .media_video
 	width: 700px
@@ -34,8 +39,8 @@
 	margin-top: -25px
 .media__side_walls
 	position: absolute
-	height: 386px
-	top: 32.2%
+	height: 100%
+	top: 0
 	z-index: 5
 	background-color: black
 
@@ -43,6 +48,7 @@
 	@extend .media__side_walls
 	right: 50%
 	margin-right: 345px
+
 .media__side_walls_left
 	@extend .media__side_walls
 	left: 50%
@@ -54,13 +60,15 @@
 	position: absolute
 	color: white
 	top: 50%
+	transform: translateY(50%)
 	z-index: 10
+
 .media_link_button_left
 	@extend.media_link_button
-	left: 98px
-.media__batton_img_right
+	left: 7.65%
+.media__button_img_right
 	@extend.media_link_button
-	right: 98px
+	right: 7.65%
 
-.media__batton_ing_left
+.media__button_img_left
 	transform: rotate(180deg)
