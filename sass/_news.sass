@@ -1,18 +1,17 @@
 .section_news
 	padding: $adabtive_sizes*75+% 0 $adabtive_sizes*76+% 0
-	text-align: center
+	@extend .alagin_center
+
 .news_logo
 	width: 70px
 	line-height: 70px
 	background: #505050
 	border-radius: 100px
-	text-align: center
 	margin: 0 auto
 
 .news_logo_img
 	width: auto
 	vertical-align: middle
-
 
 .news_title	
 	color: #505050
@@ -21,9 +20,7 @@
 	font-weight: 700
 	text-transform: uppercase
 	font-variant: small-caps
-	text-align: center
 	padding: $adabtive_sizes*35+% 0 0 0
-
 
 .news_ad
 	min-width: 213px
@@ -66,8 +63,7 @@
 	min-height: 96px
 
 .news_content_box
-	margin: 26px 0 0 21px
-
+	padding: 26px 5px 0 21px
 
 .news_ad_button
 	color: #505050
@@ -79,10 +75,10 @@
 	border: 1px solid #dddddd
 	margin: 35px 0 0 0
 	display: inline-block
+	cursor: pointer
 	&:hover
 		background-color: $corporate_color
 		color: #fff
-		 
 
 .news_more
 	color: rgba(#505050, .5)
@@ -98,7 +94,7 @@
 	&:hover
 		background-color: $corporate_color
 		color: #fff
-
+		cursor: pointer
 
 
 

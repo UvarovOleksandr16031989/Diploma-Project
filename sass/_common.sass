@@ -2,7 +2,9 @@
 .container
   margin: 0 auto
   max-width: 1100px
-  
+
+.alagin_center
+  text-align: center
 
 .clearfix
   &::after
@@ -11,32 +13,41 @@
     display: table
     overflow: hidden
 
-
-
-
-
-  
 $corporate_color: #96c038
 
 .battom_detalis
-	display: inline-block
-	padding: 10px 15px
-	background-color: $corporate_color
-	margin: 14px 0 9px 0
+  display: inline-block
+  padding: 10px 15px
+  background-color: $corporate_color
+  margin: 14px 0 9px 0
+  cursor: pointer
+
+.owl-dots>.owl-dot
+  height: 10px
+  width: 10px
+  display: inline-block
+  margin: 0 3px
+  background-color: rgba(grey, .4)
+  border-radius: 10px
+
+.active.owl-dot
+  background-color: $corporate_color
+
+
 
 $adabtive_sizes: (100 / 1100)
 
 textarea, 
 textarea:active, 
 textarea:focus 
-    outline: none
-    resize: none
+  outline: none
+  resize: none
 
 button, 
 button:active, 
 button:focus
-   outline: none
-   border: none
+  outline: none
+  border: none
 
 #chek
   display: none

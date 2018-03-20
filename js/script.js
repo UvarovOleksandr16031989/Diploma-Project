@@ -34,16 +34,18 @@ $(document).ready(function () {
      loop:true,
      margin:0,
      nav:false,
-     center:false,
-     dots: false,
+     center:true,
+     dots: true,
      autoWidth:true,
+     dotsEach:3,
+     dotData:true,
      responsive:{
          0:{
              items:1
 
          },
          680:{
-             items:2
+             items:3
          },
          1000:{
              items:3
@@ -69,16 +71,18 @@ $(document).ready(function () {
          loop:true,
          margin:0,
          nav:false,
-         center:false,
-         dots: false,
+         center:true,
+         dots: true,
          autoWidth:true,
+         dotsEach:3,
+         dotData:true,
          responsive:{
              0:{
                  items:1
 
              },
              680:{
-                 items:2
+                 items:3
              },
              1000:{
                  items:3
@@ -105,16 +109,18 @@ $(document).ready(function () {
          loop:true,
          margin:0,
          nav:false,
-         center:false,
-         dots: false,
+         center:true,
+         dots: true,
          autoWidth:true,
+         dotsEach:3,
+         dotData:true,
          responsive:{
              0:{
                  items:1
 
              },
              680:{
-                 items:2
+                 items:3
              },
              1000:{
                  items:3
@@ -141,16 +147,18 @@ $(document).ready(function () {
          loop:true,
          margin:0,
          nav:false,
-         center:false,
-         dots: false,
+         center:true,
+         dots: true,
          autoWidth:true,
+         dotsEach:3,
+         dotData:true,
          responsive:{
              0:{
                  items:1
 
              },
              680:{
-                 items:2
+                 items:3
              },
              1000:{
                  items:3
@@ -178,7 +186,7 @@ $(document).ready(function () {
          loop:true,
          video:true,
          dots:false,
-         margin:20,
+         margin:10,
          nav:false,
          center:true,
          autoWidth:true,
@@ -222,4 +230,14 @@ $(document).ready(function () {
          // Parameters has to be in square bracket '[]'
          owl.trigger('prev.owl.carousel', [300]);
      });
+ });
+
+
+
+
+ $('#map_btn').click(function(){
+     $('.map_clients').toggleClass('is-hidden');
+     $('html, body').animate({
+         scrollTop: $("#map").offset().top
+     }, 500);
  });

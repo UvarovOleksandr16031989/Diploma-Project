@@ -1,13 +1,13 @@
 .section_map
 	position: relative
 	min-height: 300px
+	overflow: hidden
 
 .map_clients_logo_img
 	width: auto
 
 .map_clients_about_content	
 	display: inline-block
-	
 
 .map_clients_logo
 	display: flex
@@ -52,7 +52,6 @@
 	position: relative
 	background-color: #fff
 	margin: $adabtive_sizes * 30 +% $adabtive_sizes * 10 +%  0 $adabtive_sizes * 29 +%
-
 	max-width: 360px
 
 #map
@@ -64,7 +63,6 @@
 .maps_btn_img
 	width: auto
 
-
 .maps_btn
 	display: block
 	margin: -3px 2.6%
@@ -74,22 +72,27 @@
 	background-color: white
 	position: relative
 	z-index: 2
-	width: 349px
-
+	width: 350px
 	&:hover
 		background-color: rgba(white, .8)
+	&:active
+
 
 #map_chek
 	display: none
 
-
-
 #map_chek:checked~.map_clients
-	height: 0px
-	padding: 0px
+	height: 0
+	padding: 0
+#map_chek:checked
 
-#map_chek:checked~.map_clients>.map_clients_about,.map_clients_about_title
+
+#map_chek:checked~.map_clients>.map_clients_about
 	display: none
+
+#map_chek:checked~.map_clients>.map_clients_about_title
+	display: none
+
 #map_chek:checked~.maps_btn
 	bottom: -242px
 

@@ -2,6 +2,7 @@
 	background: $corporate_color
 	padding: $adabtive_sizes*45+% 0 $adabtive_sizes*65+% 0
 	position: relative
+	@extend .alagin_center
 
 .media_logo_img
 	width: auto
@@ -13,12 +14,12 @@
 	vertical-align: middle
 	background: #fff
 	border-radius: 100px
-	text-align: center
 
 .media_video_box
 	position: relative
 	overflow: hidden
 	margin-top: 47px
+
 .media_title
 	color: #fff
 	font-family: 'PT Sans', sans-serif
@@ -26,17 +27,15 @@
 	font-weight: 700
 	text-transform: uppercase
 	font-variant: small-caps
-	text-align: center
-
-.media_video_carousel
-
 
 .media_video
 	width: 700px
 	height: 400px
+
 .media__side_walls_img
 	width: auto
 	margin-top: -25px
+
 .media__side_walls
 	position: absolute
 	height: 100%
@@ -62,10 +61,29 @@
 	top: 50%
 	transform: translateY(50%)
 	z-index: 10
+.colone
+	background-color: black
+	background-image: url("../images/pic/icon/ellips.png")
+	height: 100%
+	width: 60px
+	position: absolute
+	z-index: 100
+	left: -30px
+	background-position-y: 25px
+	background-position-x: 10px
+	background-repeat-x: no-repeat
+
+.colone::after
+	content: ''
+	height: 100%
+	width: 4px
+	background-color: $corporate_color
+	position: absolute
 
 .media_link_button_left
 	@extend.media_link_button
 	left: 7.65%
+
 .media__button_img_right
 	@extend.media_link_button
 	right: 7.65%

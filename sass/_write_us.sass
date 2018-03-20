@@ -3,7 +3,7 @@
 	background-size: cover
 	padding: 43px 0 86px 0
 	position: relative
-	text-align: center
+	@extend .alagin_center
 
 .write_us_logo_ing
 	width: auto
@@ -14,7 +14,6 @@
 	line-height: 70px
 	background: #fff
 	border-radius: 100px
-	text-align: center
 	margin: 0 auto	
 
 .write_us_title
@@ -25,7 +24,6 @@
 .write_us_content
 	padding: 28px 0 39px 0
 	color: #fff
-	text-align: center
 
 .write_us_review
 	font-family: 'PT Sans', sans-serif
@@ -58,8 +56,15 @@
 	margin: 20px 0 0 0
 	@extend .write_us_mail
 	width: 100%
-	
-	 
+	&:hover
+		cursor: pointer
+
+.cheice_head
+	color: rgba(#505050, .3)
+
+.write_us_topic>.choice_content
+	color: rgba(#505050, .9)
+
 .write_us_mesage
 	width: 371px
 	height: 100px
@@ -80,9 +85,6 @@
 .write_us_box_form
 	@extend.clearfix
 
-
-
-
 .write_us_form_btn	
 	text-align: center
 	color: #ffffff
@@ -97,10 +99,11 @@
 	background-color: $corporate_color
 	&:hover
 		background-color: #505050
+	&:active
+		border: 3px solid #fff
 
 .write_us_btn_box
-	padding: 35px 0 0 0	
-	text-align: center
+	padding: 35px 0 0 0
 
 .write_us_tell
 	position: absolute
@@ -108,11 +111,9 @@
 	padding: 18px 54px
 	background-color: $corporate_color
 	color: #ffffff
-	text-align: center
 	right: 50%
 	transform: translateX(50%)
 	bottom: -57px
-
 
 .write_tell_link
 	font-family: 'PT Sans', sans-serif
@@ -126,3 +127,4 @@
 	font-size: 24px
 	font-weight: 700
 	font-variant: small-caps
+
