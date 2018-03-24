@@ -82,10 +82,10 @@ $(document).ready(function () {
 
              },
              680:{
-                 items:3
+                 items:1
              },
              1000:{
-                 items:3
+                 items:1
              }
          }
      })
@@ -189,35 +189,8 @@ $(document).ready(function () {
          margin:10,
          nav:false,
          center:true,
-         autoWidth:true,
-         responsive:{
-             1199:{
-                 items:1,
-                 videoHeight:400,
-                 videoWidth: 700
-             },
-             680:{
-                 items:1,
-                 videoHeight:400,
-                 videoWidth: 700
-             },
-             600:{
-                 items:1,
-                 videoHeight:300,
-                 videoWidth: 600
-             },
-             480:{
-                 items:1,
-                 videoHeight:200,
-                 videoWidth: 400
-             },
-             400:{
-                 items:1,
-                 videoHeight:100,
-                 videoWidth: 300
-             }
-         }
-     })
+         autoWidth:true
+     });
      var owl = $('.caroselVideo');
      owl.owlCarousel();
      // Go to the next item
