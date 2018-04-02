@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link  rel="stylesheet "  href = "./css/owl.carousel.min.css " />
 	<link  rel = " stylesheet "  href = "./css/owl.theme.default.css" />
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 </head>
@@ -77,7 +78,7 @@
                         <br> для нових
                         <strong class="header_content_strong ">звершень!</strong>
                     </p>
-                    <figure class="header_contant_figure">
+                    <figure class="header_contant_figure wow bounceInDown animated">
                         <img class="header_contant_img" src="images/portfolio/header_img.png">
                     </figure>
                 </div>
@@ -170,7 +171,7 @@
         <h3 class="menu_title">
 			FRED&FRESH МЕНЮ
 		</h3>
-<article class="menu_content">
+<article class="menu_content  wow bounceInRight animated " data-wow-offset="320" >
     <div class="menu_content_offer">
         <figure class="menu_content_figure">
             <img src="images/portfolio/menu_sandwich.png" alt="" class="menu_content_img">
@@ -312,7 +313,7 @@
         </div>
         </div>
 </article>
-<article class="menu_content">
+<article class="menu_content wow bounceInLeft animated" data-wow-offset="320">
     <div class="menu_content_offer">
         <figure class="menu_content_figure revers">
             <img src="images/portfolio/menu_soup.png" alt="" class="menu_content_img">
@@ -408,7 +409,7 @@
         </div>
     </div>
 </article>
-<article class="menu_content">
+<article class="menu_content wow bounceInRight animated" data-wow-offset="320">
     <div class="menu_content_offer">
         <figure class="menu_content_figure">
             <img src="images/portfolio/menu_salad.png" alt="" class="menu_content_img">
@@ -569,7 +570,7 @@
         </div>
     </div>
 </article>
-<article class="menu_content">
+<article class="menu_content wow bounceInLeft animated" data-wow-offset="320">
     <div class="menu_content_offer">
         <figure class="menu_content_figure revers">
             <img src="images/portfolio/menu_dessert.png" alt="" class="menu_content_img">
@@ -1140,6 +1141,10 @@
     </script>
 <script src="./js/jquery.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="./js/script.js"></script>
 </div>
 </body>
